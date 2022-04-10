@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WiFi | ESP32 Bibliotecas</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="Documenta rápido">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/ESP32Bibliotecas/assets/css/0.styles.df5a2db4.css" as="style"><link rel="preload" href="/ESP32Bibliotecas/assets/js/app.677a62d4.js" as="script"><link rel="preload" href="/ESP32Bibliotecas/assets/js/2.01b20be0.js" as="script"><link rel="preload" href="/ESP32Bibliotecas/assets/js/16.15e3e290.js" as="script"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/10.10ac5744.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/11.0c8525d9.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/12.e3522ef7.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/13.5645fa86.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/14.971a1076.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/15.b360789d.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/3.0717bf0c.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/4.1a8f7237.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/5.bb6a4b3f.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/6.034b101a.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/7.2f30368f.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/8.3c8f93b5.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/9.56df714c.js">
+    <link rel="stylesheet" href="/ESP32Bibliotecas/assets/css/0.styles.df5a2db4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ESP32Bibliotecas/" class="home-link router-link-active"><!----> <span class="site-name">ESP32 Bibliotecas</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/ESP32Bibliotecas/wifi/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  WiFi
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/utilidades/" class="nav-link">
+  Utilidades
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/sensores/" class="nav-link">
+  Sensores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/actuadores/" class="nav-link">
+  Actuadores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/motores/" class="nav-link">
+  Motores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/pantallas/" class="nav-link">
+  Pantallas
+</a></div><div class="nav-item"><a href="https://youtu.be/FAtC9YKy1Rk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Canal Youtube
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/ESP32Bibliotecas/wifi/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  WiFi
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/utilidades/" class="nav-link">
+  Utilidades
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/sensores/" class="nav-link">
+  Sensores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/actuadores/" class="nav-link">
+  Actuadores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/motores/" class="nav-link">
+  Motores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/pantallas/" class="nav-link">
+  Pantallas
+</a></div><div class="nav-item"><a href="https://youtu.be/FAtC9YKy1Rk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Canal Youtube
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>WiFi</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ESP32Bibliotecas/wifi/#conexiones-station-access-point" class="sidebar-link">Conexiones Station / Access Point</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ESP32Bibliotecas/wifi/#include-wifi-hpp" class="sidebar-link">#include &quot;WiFi.hpp&quot;</a></li></ul></li><li><a href="/ESP32Bibliotecas/wifi/#servidor-web-asyncrono" class="sidebar-link">Servidor Web Asyncrono</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ESP32Bibliotecas/wifi/#include-espasyncwebserver-hpp" class="sidebar-link">#include &quot;ESPAsyncWebServer.hpp&quot;</a></li></ul></li><li><a href="/ESP32Bibliotecas/wifi/#servidor-web-asincrono-spiffs" class="sidebar-link">Servidor Web Asincrono + SPIFFS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ESP32Bibliotecas/wifi/#include-espasyncwebserverspiffs-hpp" class="sidebar-link">#include &quot;ESPAsyncWebServerSPIFFS.hpp&quot;</a></li><li class="sidebar-sub-header"><a href="/ESP32Bibliotecas/wifi/#html" class="sidebar-link">HTML</a></li></ul></li><li><a href="/ESP32Bibliotecas/wifi/#websocket" class="sidebar-link">WebSocket</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ESP32Bibliotecas/wifi/#importar-bibliotecas" class="sidebar-link">Importar bibliotecas</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="wifi"><a href="#wifi" class="header-anchor">#</a> WiFi</h1> <h2 id="conexiones-station-access-point"><a href="#conexiones-station-access-point" class="header-anchor">#</a> Conexiones Station / Access Point</h2> <p><a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html" target="_blank" rel="noopener noreferrer">ESP32 Arduino<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/api/wifi.html?highlight=wifi#" target="_blank" rel="noopener noreferrer">WiFi<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="include-wifi-hpp"><a href="#include-wifi-hpp" class="header-anchor">#</a> #include &quot;WiFi.hpp&quot;</h3> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;WiFi.h&gt;</span></span>
+
+<span class="token keyword">const</span> <span class="token keyword">char</span><span class="token operator">*</span> red <span class="token operator">=</span> <span class="token string">&quot;studiomiranda&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">char</span><span class="token operator">*</span> contrasena <span class="token operator">=</span> <span class="token string">&quot;88888888&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">initStation</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  WiFi<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span>red<span class="token punctuation">,</span> contrasena<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;Conectando&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>WiFi<span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> WL_CONNECTED<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+      <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;Conectado, dirección IP: &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>WiFi<span class="token punctuation">.</span><span class="token function">localIP</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">initAccessPoint</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  WiFi<span class="token punctuation">.</span><span class="token function">softAP</span><span class="token punctuation">(</span><span class="token string">&quot;PuntoAcceso&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;contrasena&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Soft Access Point: &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>WiFi<span class="token punctuation">.</span><span class="token function">softAPIP</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="servidor-web-asyncrono"><a href="#servidor-web-asyncrono" class="header-anchor">#</a> Servidor Web Asyncrono</h2> <h3 id="include-espasyncwebserver-hpp"><a href="#include-espasyncwebserver-hpp" class="header-anchor">#</a> #include &quot;ESPAsyncWebServer.hpp&quot;</h3> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token comment">// Bibliotecas</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;ESPAsyncWebServer.h&gt;</span></span>
+
+<span class="token comment">// Configuración</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">Led</span> <span class="token expression"><span class="token number">2</span></span></span>
+
+<span class="token comment">// Instancia </span>
+AsyncWebServer <span class="token function">server</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Variables </span>
+<span class="token keyword">char</span> paginaweb<span class="token punctuation">[</span><span class="token punctuation">]</span> PROGMEM <span class="token operator">=</span> <span class="token raw-string string">R&quot;=====(
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;h1&gt;ESP32 HTML&lt;/h1&gt;
+&lt;h3&gt; LED &lt;/h3&gt;
+&lt;button onclick=&quot;window.location = 'http://'+location.hostname+'/led/on'&quot;&gt;On&lt;/button&gt;
+&lt;button onclick=&quot;window.location = 'http://'+location.hostname+'/led/off'&quot;&gt;Off&lt;/button&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+)=====&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Funciones</span>
+<span class="token keyword">void</span> <span class="token function">notFound</span> <span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span>request<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    request<span class="token operator">-&gt;</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token number">404</span><span class="token punctuation">,</span> <span class="token string">&quot;text/plain&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Página no encontrada&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">servidor</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span> request<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>  
+  request<span class="token operator">-&gt;</span><span class="token function">send_P</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token string">&quot;text/html&quot;</span><span class="token punctuation">,</span> paginaweb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+   server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;/led/on&quot;</span><span class="token punctuation">,</span> HTTP_GET<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span> request<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span> 
+    <span class="token function">digitalWrite</span><span class="token punctuation">(</span>Led<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  request<span class="token operator">-&gt;</span><span class="token function">send_P</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token string">&quot;text/html&quot;</span><span class="token punctuation">,</span> paginaweb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;/led/off&quot;</span><span class="token punctuation">,</span> HTTP_GET<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span> request<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span> 
+    <span class="token function">digitalWrite</span><span class="token punctuation">(</span>Led<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  request<span class="token operator">-&gt;</span><span class="token function">send_P</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token string">&quot;text/html&quot;</span><span class="token punctuation">,</span> paginaweb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  server<span class="token punctuation">.</span><span class="token function">onNotFound</span><span class="token punctuation">(</span>notFound<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  server<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-c extra-class"><pre class="language-c"><code><span class="token function">pinMode</span><span class="token punctuation">(</span>Led<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="servidor-web-asincrono-spiffs"><a href="#servidor-web-asincrono-spiffs" class="header-anchor">#</a> Servidor Web Asincrono + SPIFFS</h2> <h3 id="include-espasyncwebserverspiffs-hpp"><a href="#include-espasyncwebserverspiffs-hpp" class="header-anchor">#</a> #include &quot;ESPAsyncWebServerSPIFFS.hpp&quot;</h3> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token comment">// Bibliotecas</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;ESPAsyncWebServer.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&quot;SPIFFS.h&quot;</span></span>
+
+<span class="token comment">// Configuración</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">Led</span> <span class="token expression"><span class="token number">2</span></span></span>
+
+<span class="token comment">// Instancia </span>
+AsyncWebServer <span class="token function">server</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Funciones</span>
+<span class="token keyword">void</span> <span class="token function">notFound</span> <span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span>request<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    request<span class="token operator">-&gt;</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token number">404</span><span class="token punctuation">,</span> <span class="token string">&quot;text/plain&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Página no encontrada&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">servidor</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>SPIFFS<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;A ocurrido un error al montando SPIFFS&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span> HTTP_GET<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span> request<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    request<span class="token operator">-&gt;</span><span class="token function">send</span><span class="token punctuation">(</span>SPIFFS<span class="token punctuation">,</span> <span class="token string">&quot;/index.html&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;text/html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;/led/on&quot;</span><span class="token punctuation">,</span> HTTP_GET<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span> request<span class="token punctuation">)</span><span class="token punctuation">{</span> 
+    <span class="token function">digitalWrite</span><span class="token punctuation">(</span>Led<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    request<span class="token operator">-&gt;</span><span class="token function">send</span><span class="token punctuation">(</span>SPIFFS<span class="token punctuation">,</span> <span class="token string">&quot;/index.html&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;text/html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;/led/off&quot;</span><span class="token punctuation">,</span> HTTP_GET<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span> request<span class="token punctuation">)</span><span class="token punctuation">{</span> 
+    <span class="token function">digitalWrite</span><span class="token punctuation">(</span>Led<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    request<span class="token operator">-&gt;</span><span class="token function">send</span><span class="token punctuation">(</span>SPIFFS<span class="token punctuation">,</span> <span class="token string">&quot;/index.html&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;text/html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  server<span class="token punctuation">.</span><span class="token function">onNotFound</span><span class="token punctuation">(</span>notFound<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  server<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="espasyncwebserver-hpp"><a href="#espasyncwebserver-hpp" class="header-anchor">#</a> ESPAsyncWebServer.hpp</h4> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token comment">// Descarga la herramienta Sketch Data Upload</span>
+<span class="token comment">// https://github.com/me-no-dev/arduino-esp32fs-plugin/releases/</span>
+
+<span class="token comment">// Biblotecas</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&quot;ESPAsyncWebServer.h&quot;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&quot;SPIFFS.h&quot;</span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">Led</span> <span class="token expression"><span class="token number">2</span></span></span>
+
+<span class="token comment">// Instancia / constructor</span>
+AsyncWebServer <span class="token function">server</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Funciones / métodos</span>
+<span class="token keyword">void</span> <span class="token function">initESPAsyncWebServer</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">// Initialize SPIFFS</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>SPIFFS<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;A ocurrido un error al montando SPIFFS&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  server<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span> HTTP_GET<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span> request<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    request<span class="token operator">-&gt;</span><span class="token function">send</span><span class="token punctuation">(</span>SPIFFS<span class="token punctuation">,</span> <span class="token string">&quot;/index.html&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;text/html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;/led/on&quot;</span><span class="token punctuation">,</span> HTTP_GET<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span> request<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    <span class="token function">digitalWrite</span><span class="token punctuation">(</span>Led<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    request<span class="token operator">-&gt;</span><span class="token function">send</span><span class="token punctuation">(</span>SPIFFS<span class="token punctuation">,</span> <span class="token string">&quot;/index.html&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;text/html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;/led/off&quot;</span><span class="token punctuation">,</span> HTTP_GET<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span> request<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    <span class="token function">digitalWrite</span><span class="token punctuation">(</span>Led<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    request<span class="token operator">-&gt;</span><span class="token function">send</span><span class="token punctuation">(</span>SPIFFS<span class="token punctuation">,</span> <span class="token string">&quot;/index.html&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;text/html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="html"><a href="#html" class="header-anchor">#</a> HTML</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>center</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>ESP32 HTML<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span> LED <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>window.location = <span class="token punctuation">'</span>http://<span class="token punctuation">'</span>+location.hostname+<span class="token punctuation">'</span>/led/on<span class="token punctuation">'</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>On<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>window.location = <span class="token punctuation">'</span>http://<span class="token punctuation">'</span>+location.hostname+<span class="token punctuation">'</span>/led/off<span class="token punctuation">'</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Off<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>center</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="websocket"><a href="#websocket" class="header-anchor">#</a> WebSocket</h2> <h3 id="importar-bibliotecas"><a href="#importar-bibliotecas" class="header-anchor">#</a> Importar bibliotecas</h3> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;WebSocketsServer.h&gt;</span></span>
+</code></pre></div><div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">Led</span> <span class="token expression"><span class="token number">2</span></span></span>
+
+<span class="token keyword">void</span> <span class="token function">notFound</span><span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span>request<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  request<span class="token operator">-&gt;</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token number">404</span><span class="token punctuation">,</span> <span class="token string">&quot;text/plain&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;¡Página no encontrada!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="instancia-y-funcion-es-recibir-datos"><a href="#instancia-y-funcion-es-recibir-datos" class="header-anchor">#</a> Instancia y Función/es (recibir datos)</h4> <div class="language-cpp extra-class"><pre class="language-cpp"><code>WebSocketsServer <span class="token function">websockets</span><span class="token punctuation">(</span><span class="token number">81</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">webSocketEvent</span><span class="token punctuation">(</span><span class="token keyword">uint8_t</span> num<span class="token punctuation">,</span> WStype_t type<span class="token punctuation">,</span> <span class="token keyword">uint8_t</span> <span class="token operator">*</span> payload<span class="token punctuation">,</span> size_t length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span>type<span class="token punctuation">)</span> 
+  <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> WStype_DISCONNECTED<span class="token operator">:</span>
+      Serial<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;[%u] ¡Desconectado!\n&quot;</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> WStype_CONNECTED<span class="token operator">:</span> <span class="token punctuation">{</span>
+        IPAddress ip <span class="token operator">=</span> websockets<span class="token punctuation">.</span><span class="token function">remoteIP</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Serial<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;[%u] Conectado en %d.%d.%d.%d url: %s\n&quot;</span><span class="token punctuation">,</span> num<span class="token punctuation">,</span> ip<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> ip<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> ip<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> ip<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        websockets<span class="token punctuation">.</span><span class="token function">sendTXT</span><span class="token punctuation">(</span>num<span class="token punctuation">,</span> <span class="token string">&quot;Conectado en servidor:&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> WStype_TEXT<span class="token operator">:</span>
+      Serial<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;[%u] Recibe el texto: %s\n&quot;</span><span class="token punctuation">,</span> num<span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      String mensaje <span class="token operator">=</span> <span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span> payload<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>mensaje<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span><span class="token punctuation">(</span>mensaje <span class="token operator">==</span> <span class="token string">&quot;Led esta en OFF&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">digitalWrite</span><span class="token punctuation">(</span>Led<span class="token punctuation">,</span>LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">if</span><span class="token punctuation">(</span>mensaje <span class="token operator">==</span> <span class="token string">&quot;Led esta en ON&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">digitalWrite</span><span class="token punctuation">(</span>Led<span class="token punctuation">,</span>HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="websocketsserver-hpp"><a href="#websocketsserver-hpp" class="header-anchor">#</a> WebSocketsServer.hpp</h4> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token comment">// Bibliotecas</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;WebSocketsServer.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;ArduinoJson.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Ticker.h&gt;</span></span>
+
+<span class="token comment">// Configuración</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">Led</span> <span class="token expression"><span class="token number">2</span></span></span>
+
+<span class="token keyword">void</span> <span class="token function">enviarDatosSensorWebsockets</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Instancia / constructor</span>
+WebSocketsServer <span class="token function">websockets</span><span class="token punctuation">(</span><span class="token number">81</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Ticker timer<span class="token punctuation">;</span>
+
+<span class="token comment">// Funciones / Métodos</span>
+<span class="token keyword">void</span> <span class="token function">webSocketEvent</span><span class="token punctuation">(</span><span class="token keyword">uint8_t</span> num<span class="token punctuation">,</span> WStype_t type<span class="token punctuation">,</span> <span class="token keyword">uint8_t</span> <span class="token operator">*</span> payload<span class="token punctuation">,</span> size_t length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span>type<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> WStype_DISCONNECTED<span class="token operator">:</span>
+      Serial<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;[%u] ¡Desconectado!\n&quot;</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> WStype_CONNECTED<span class="token operator">:</span> <span class="token punctuation">{</span>
+        IPAddress ip <span class="token operator">=</span> websockets<span class="token punctuation">.</span><span class="token function">remoteIP</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Serial<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;[%u] Conectado en %d.%d.%d.%d url: %s\n&quot;</span><span class="token punctuation">,</span> num<span class="token punctuation">,</span> ip<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> ip<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> ip<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> ip<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> WStype_TEXT<span class="token operator">:</span>
+      Serial<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;[%u] Texto: %s\n&quot;</span><span class="token punctuation">,</span> num<span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      String mensaje <span class="token operator">=</span> <span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span> payload<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>mensaje<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      DynamicJsonDocument <span class="token function">doc</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// documento (capacidad)</span>
+      DeserializationError error <span class="token operator">=</span> <span class="token function">deserializeJson</span><span class="token punctuation">(</span>doc<span class="token punctuation">,</span> mensaje<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;deserializeJson() failed: &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>  
+      <span class="token keyword">int</span> estadoLed <span class="token operator">=</span> doc<span class="token punctuation">[</span><span class="token string">&quot;Led&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// el estado será de 0 o 1</span>
+      <span class="token function">digitalWrite</span><span class="token punctuation">(</span>Led<span class="token punctuation">,</span>estadoLed<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">enviarDatosSensorWebsockets</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  TempAndHumidity  data <span class="token operator">=</span> dhtSensor<span class="token punctuation">.</span><span class="token function">getTempAndHumidity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">float</span> t <span class="token operator">=</span> data<span class="token punctuation">.</span>temperature<span class="token punctuation">;</span>
+  <span class="token keyword">float</span> h <span class="token operator">=</span> data<span class="token punctuation">.</span>humidity<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isnan</span><span class="token punctuation">(</span>h<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token function">isnan</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token function">F</span><span class="token punctuation">(</span><span class="token string">&quot;Fallo de lectura en sensor DHT!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  String JSON_Data <span class="token operator">=</span> <span class="token string">&quot;{\&quot;temp\&quot;:&quot;</span><span class="token punctuation">;</span>
+         JSON_Data <span class="token operator">+=</span> t<span class="token punctuation">;</span>
+         JSON_Data <span class="token operator">+=</span> <span class="token string">&quot;,\&quot;hum\&quot;:&quot;</span><span class="token punctuation">;</span>
+         JSON_Data <span class="token operator">+=</span> h<span class="token punctuation">;</span>
+         JSON_Data <span class="token operator">+=</span> <span class="token string">&quot;}&quot;</span><span class="token punctuation">;</span>       
+   Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>JSON_Data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   websockets<span class="token punctuation">.</span><span class="token function">broadcastTXT</span><span class="token punctuation">(</span>JSON_Data<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// envia datos a todos los clientes conectados</span>
+<span class="token punctuation">}</span>
+  
+<span class="token keyword">void</span> <span class="token function">initWebSocketsServer</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  websockets<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  websockets<span class="token punctuation">.</span><span class="token function">onEvent</span><span class="token punctuation">(</span>webSocketEvent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  timer<span class="token punctuation">.</span><span class="token function">attach</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span>enviarDatosSensorWebsockets<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="funcion-enviar-datos"><a href="#funcion-enviar-datos" class="header-anchor">#</a> Función (enviar datos)</h4> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token comment">// Función envío datos por websocket en formato Json</span>
+<span class="token keyword">void</span> <span class="token function">enviarDatosSensor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   String JSON_Data <span class="token operator">=</span> <span class="token string">&quot;{\&quot;temperatura\&quot;:&quot;</span><span class="token punctuation">;</span>
+          JSON_Data <span class="token operator">+=</span> temperatura<span class="token punctuation">;</span>
+          JSON_Data <span class="token operator">+=</span> <span class="token string">&quot;,\&quot;humedad\&quot;:&quot;</span><span class="token punctuation">;</span>
+          JSON_Data <span class="token operator">+=</span> humedad<span class="token punctuation">;</span>
+          JSON_Data <span class="token operator">+=</span> <span class="token string">&quot;,\&quot;termostato\&quot;:&quot;</span><span class="token punctuation">;</span>
+          JSON_Data <span class="token operator">+=</span> termostato<span class="token punctuation">;</span>
+          JSON_Data <span class="token operator">+=</span> <span class="token string">&quot;,\&quot;rele\&quot;:&quot;</span><span class="token punctuation">;</span>
+          JSON_Data <span class="token operator">+=</span> rele<span class="token punctuation">;</span>
+          JSON_Data <span class="token operator">+=</span> <span class="token string">&quot;}&quot;</span><span class="token punctuation">;</span>
+   Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>JSON_Data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   websockets<span class="token punctuation">.</span><span class="token function">broadcastTXT</span><span class="token punctuation">(</span>JSON_Data<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// envia datos a todos los clientes conectados</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="void-setup"><a href="#void-setup" class="header-anchor">#</a> void setup()</h4> <div class="language-cpp extra-class"><pre class="language-cpp"><code>  Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>Led<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  WiFi<span class="token punctuation">.</span><span class="token function">softAP</span><span class="token punctuation">(</span><span class="token string">&quot;PuntoAcceso&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;softAP&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>WiFi<span class="token punctuation">.</span><span class="token function">softAPIP</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>SPIFFS<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;A ocurrido un error al montar SPIFFS&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  
+  server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span> HTTP_GET<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span>AsyncWebServerRequest <span class="token operator">*</span> request<span class="token punctuation">)</span>
+  <span class="token punctuation">{</span> 
+   request<span class="token operator">-&gt;</span><span class="token function">send</span><span class="token punctuation">(</span>SPIFFS<span class="token punctuation">,</span> <span class="token string">&quot;/index.html&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;text/html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  server<span class="token punctuation">.</span><span class="token function">onNotFound</span><span class="token punctuation">(</span>notFound<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  server<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-cpp extra-class"><pre class="language-cpp"><code>  websockets<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  websockets<span class="token punctuation">.</span><span class="token function">onEvent</span><span class="token punctuation">(</span>webSocketEvent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="void-loop"><a href="#void-loop" class="header-anchor">#</a> void loop()</h4> <div class="language-cpp extra-class"><pre class="language-cpp"><code> websockets<span class="token punctuation">.</span><span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token function">enviarDatosSensor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/ESP32Bibliotecas/assets/js/app.677a62d4.js" defer></script><script src="/ESP32Bibliotecas/assets/js/2.01b20be0.js" defer></script><script src="/ESP32Bibliotecas/assets/js/16.15e3e290.js" defer></script>
+  </body>
+</html>

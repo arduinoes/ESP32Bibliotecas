@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MOTORES | ESP32 Bibliotecas</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="Documenta rápido">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/ESP32Bibliotecas/assets/css/0.styles.df5a2db4.css" as="style"><link rel="preload" href="/ESP32Bibliotecas/assets/js/app.677a62d4.js" as="script"><link rel="preload" href="/ESP32Bibliotecas/assets/js/2.01b20be0.js" as="script"><link rel="preload" href="/ESP32Bibliotecas/assets/js/12.e3522ef7.js" as="script"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/10.10ac5744.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/11.0c8525d9.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/13.5645fa86.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/14.971a1076.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/15.b360789d.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/16.15e3e290.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/3.0717bf0c.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/4.1a8f7237.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/5.bb6a4b3f.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/6.034b101a.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/7.2f30368f.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/8.3c8f93b5.js"><link rel="prefetch" href="/ESP32Bibliotecas/assets/js/9.56df714c.js">
+    <link rel="stylesheet" href="/ESP32Bibliotecas/assets/css/0.styles.df5a2db4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ESP32Bibliotecas/" class="home-link router-link-active"><!----> <span class="site-name">ESP32 Bibliotecas</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/ESP32Bibliotecas/wifi/" class="nav-link">
+  WiFi
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/utilidades/" class="nav-link">
+  Utilidades
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/sensores/" class="nav-link">
+  Sensores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/actuadores/" class="nav-link">
+  Actuadores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/motores/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Motores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/pantallas/" class="nav-link">
+  Pantallas
+</a></div><div class="nav-item"><a href="https://youtu.be/FAtC9YKy1Rk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Canal Youtube
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/ESP32Bibliotecas/wifi/" class="nav-link">
+  WiFi
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/utilidades/" class="nav-link">
+  Utilidades
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/sensores/" class="nav-link">
+  Sensores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/actuadores/" class="nav-link">
+  Actuadores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/motores/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Motores
+</a></div><div class="nav-item"><a href="/ESP32Bibliotecas/pantallas/" class="nav-link">
+  Pantallas
+</a></div><div class="nav-item"><a href="https://youtu.be/FAtC9YKy1Rk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Canal Youtube
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>MOTORES</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ESP32Bibliotecas/motores/#motores-paso-a-paso" class="sidebar-link">Motores paso a paso</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/ESP32Bibliotecas/motores/#biblioteca-stepper" class="sidebar-link">Biblioteca stepper</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ESP32Bibliotecas/motores/#_28byj-48-motor-uln2003-driver" class="sidebar-link">28BYJ-48 Motor + ULN2003 Driver</a></li></ul></li><li><a href="/ESP32Bibliotecas/motores/#motores-dc-l298n" class="sidebar-link">Motores DC L298N</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/ESP32Bibliotecas/motores/#biblioteca-servo-h" class="sidebar-link">Biblioteca servo.h</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ESP32Bibliotecas/motores/#servo" class="sidebar-link">Servo</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="motores"><a href="#motores" class="header-anchor">#</a> MOTORES</h1> <h2 id="motores-paso-a-paso"><a href="#motores-paso-a-paso" class="header-anchor">#</a> Motores paso a paso</h2> <p>Biblioteca <a href="https://randomnerdtutorials.com/stepper-motor-esp32-websocket/" target="_blank" rel="noopener noreferrer">stepper<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="biblioteca-stepper"><a href="#biblioteca-stepper" class="header-anchor">#</a> Biblioteca stepper</h2> <h3 id="_28byj-48-motor-uln2003-driver"><a href="#_28byj-48-motor-uln2003-driver" class="header-anchor">#</a> 28BYJ-48 Motor + ULN2003 Driver</h3> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Stepper.h&gt;</span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">IN1</span> <span class="token expression"><span class="token number">19</span> </span><span class="token comment">// Pines driver</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">IN2</span> <span class="token expression"><span class="token number">18</span></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">IN3</span> <span class="token expression"><span class="token number">5</span></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">IN4</span> <span class="token expression"><span class="token number">17</span></span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">PASOS</span> <span class="token expression"><span class="token number">2048</span> </span><span class="token comment">// Pasos - revoluciones</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">NUMPASOS</span> <span class="token expression"><span class="token number">100</span></span></span>
+<span class="token keyword">int</span> velocidad <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+Stepper <span class="token function">myStepper</span><span class="token punctuation">(</span>PASOS<span class="token punctuation">,</span> IN1<span class="token punctuation">,</span> IN3<span class="token punctuation">,</span> IN2<span class="token punctuation">,</span> IN4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="void-setup"><a href="#void-setup" class="header-anchor">#</a> void setup()</h4> <div class="language-cpp extra-class"><pre class="language-cpp"><code>myStepper<span class="token punctuation">.</span><span class="token function">setSpeed</span><span class="token punctuation">(</span>velocidad<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="void-loop"><a href="#void-loop" class="header-anchor">#</a> void loop()</h4> <div class="language-cpp extra-class"><pre class="language-cpp"><code>  <span class="token comment">// Movemos el motor un número determinado de pasos</span>
+  stepper<span class="token punctuation">.</span><span class="token function">step</span><span class="token punctuation">(</span>NUMPASOS<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="motores-dc-l298n"><a href="#motores-dc-l298n" class="header-anchor">#</a> Motores DC L298N</h2> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token comment">// Motor A</span>
+<span class="token keyword">int</span> motor1Pin1 <span class="token operator">=</span> <span class="token number">27</span><span class="token punctuation">;</span> 
+<span class="token keyword">int</span> motor1Pin2 <span class="token operator">=</span> <span class="token number">26</span><span class="token punctuation">;</span> 
+<span class="token keyword">int</span> enable1Pin <span class="token operator">=</span> <span class="token number">14</span><span class="token punctuation">;</span> 
+
+<span class="token comment">// Setting PWM properties</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> freq <span class="token operator">=</span> <span class="token number">30000</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> pwmChannel <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> resolution <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> dutyCycle <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// sets the pins as outputs:</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>motor1Pin1<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>motor1Pin2<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span>enable1Pin<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token comment">// configure LED PWM functionalitites</span>
+  <span class="token function">ledcSetup</span><span class="token punctuation">(</span>pwmChannel<span class="token punctuation">,</span> freq<span class="token punctuation">,</span> resolution<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token comment">// attach the channel to the GPIO to be controlled</span>
+  <span class="token function">ledcAttachPin</span><span class="token punctuation">(</span>enable1Pin<span class="token punctuation">,</span> pwmChannel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">115200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// testing</span>
+  Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;Testing DC Motor...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Move the DC motor forward at maximum speed</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Moving Forward&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>motor1Pin1<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>motor1Pin2<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+  <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Stop the DC motor</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Motor stopped&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>motor1Pin1<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>motor1Pin2<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Move DC motor backwards at maximum speed</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Moving Backwards&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>motor1Pin1<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>motor1Pin2<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+  <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Stop the DC motor</span>
+  Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Motor stopped&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>motor1Pin1<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>motor1Pin2<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Move DC motor forward with increasing speed</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>motor1Pin1<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span>motor1Pin2<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>dutyCycle <span class="token operator">&lt;=</span> <span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">ledcWrite</span><span class="token punctuation">(</span>pwmChannel<span class="token punctuation">,</span> dutyCycle<span class="token punctuation">)</span><span class="token punctuation">;</span>   
+    Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;Forward with duty cycle: &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>dutyCycle<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    dutyCycle <span class="token operator">=</span> dutyCycle <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  dutyCycle <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="biblioteca-servo-h"><a href="#biblioteca-servo-h" class="header-anchor">#</a> Biblioteca servo.h</h2> <h3 id="servo"><a href="#servo" class="header-anchor">#</a> Servo</h3> <h4 id="importar-biblioteca-pin-instancia-y-variable"><a href="#importar-biblioteca-pin-instancia-y-variable" class="header-anchor">#</a> Importar biblioteca, pin, instancia y variable</h4> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;Servo.h&gt;</span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">SERVOPIN</span> <span class="token expression"><span class="token number">13</span></span></span>
+
+Servo mi_servo<span class="token punctuation">;</span>  <span class="token comment">// Instancia, 12 objetos como máximo</span>
+
+<span class="token keyword">int</span> posicion <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>    <span class="token comment">// Posición inicial</span>
+</code></pre></div><h4 id="void-setup-2"><a href="#void-setup-2" class="header-anchor">#</a> void setup()</h4> <div class="language-cpp extra-class"><pre class="language-cpp"><code>  mi_servo<span class="token punctuation">.</span><span class="token function">attach</span><span class="token punctuation">(</span>SERVOPIN<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="void-loop-2"><a href="#void-loop-2" class="header-anchor">#</a> void loop()</h4> <div class="language-cpp extra-class"><pre class="language-cpp"><code>  <span class="token keyword">for</span> <span class="token punctuation">(</span>posicion <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> posicion <span class="token operator">&lt;=</span> <span class="token number">180</span><span class="token punctuation">;</span> posicion <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// De 0 a 180 grados, un paso = un grado</span>
+    mi_servo<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>posicion<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span>posicion <span class="token operator">=</span> <span class="token number">180</span><span class="token punctuation">;</span> posicion <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> posicion <span class="token operator">-=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//  De  180 a 0 grados</span>
+    myservo<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>posicion<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                       
+  <span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/ESP32Bibliotecas/assets/js/app.677a62d4.js" defer></script><script src="/ESP32Bibliotecas/assets/js/2.01b20be0.js" defer></script><script src="/ESP32Bibliotecas/assets/js/12.e3522ef7.js" defer></script>
+  </body>
+</html>
